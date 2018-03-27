@@ -1,3 +1,3 @@
 console.log("hello");
 console.log("word");
-function(){}
+function a(){return 1;}
