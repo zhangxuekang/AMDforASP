@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AMD</title>
+	<script type="text/javascript" src="./js/lib/require.js"></script>
+</head>
+<body>
+	<div id="app">
+		<div id="nav">
+			<ul>
+				<li v-for="(value,key) in navData">
+					<router-link :to="'/'+key">{{value}}</router-link>
+				</li>
+			</ul>
+		</div>
+		<router-view></router-view>
+	</div>
+</body>   
+<script type="text/javascript" src="main.js"></script> 
+</html>
