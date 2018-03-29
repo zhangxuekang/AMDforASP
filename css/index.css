@@ -1,0 +1,13 @@
+#app{
+	margin-top: 20px;
+	border: 1px solid #EEEEEE;
+}
+#nav{
+	margin: 10px 0;
+}
+#nav a{
+
+}
+.nav a.router-link-active{
+	color: #994500;
+}

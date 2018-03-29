@@ -1,16 +1,19 @@
 //配置引入路径
 require.config({
+	//配置根路径
+	baseUrl:'./js',
     paths: {
-        Vue: './js/lib/vue',
-        VueRouter: './js/lib/vue-router',
-        route: './js/route',
-        $a: './js/a',
-        $b: './js/b',
+    	jquery: 'lib/jquery-3.2.1.min',
+        Vue: 'lib/vue',
+        VueRouter: 'lib/vue-router',
+        route: 'route',
+        $a: 'a',
+        $b: 'b',
     }
 });
 
 
-require(['Vue','VueRouter','route'], function(Vue,VueRouter,router) {
+require(['jquery','Vue','VueRouter','route'], function($,Vue,VueRouter,router) {
 
     var vm = new Vue({
     	el:"#app",
@@ -22,5 +25,5 @@ require(['Vue','VueRouter','route'], function(Vue,VueRouter,router) {
     	},
     	router:router,
     });
-    
+
 });

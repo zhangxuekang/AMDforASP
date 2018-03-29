@@ -3,18 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>AMD</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
 	<script type="text/javascript" src="./js/lib/require.js"></script>
 </head>
 <body>
-	<div id="app">
-		<div id="nav">
-			<ul>
-				<li v-for="(value,key) in navData">
+	<div id="app" class="container" style="">
+		<div id="nav" class="row">
+			<ul class="nav nav-tabs">
+				<li class="col-md-3 text-center" role="presentation" v-for="(value,key) in navData">
 					<router-link :to="'/'+key">{{value}}</router-link>
 				</li>
 			</ul>
 		</div>
-		<router-view></router-view>
+		<div class="jumbotron">
+		    <router-view></router-view>
+		</div>
 	</div>
 </body>   
 <script type="text/javascript" src="main.js"></script> 

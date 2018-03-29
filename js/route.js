@@ -10,23 +10,14 @@ define('route',['Vue','VueRouter','$a','$b'],function(Vue,VueRouter,$a,$b){
     },{
     	path:"/b",
     	component:$b
+    },{
+        path:"/",
+        component:$a
     }];
 
     //创建路由实例，导入配置的路由地址
     var router = new VueRouter({routes});
     return router;
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 });
